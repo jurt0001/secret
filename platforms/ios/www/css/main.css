@@ -1,0 +1,95 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.title {
+    
+    font-size: 1.5rem;
+    
+}
+
+#form {
+    
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.bar-nav{    
+    margin-top: 20px;
+
+}
+
+.content{
+    margin-top: -6px;
+}
+
+#captured-photo{
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+#newImage{
+    width: 100%;
+    margin: 0 auto;
+      
+}
+
+#cancelBtn,#saveMe,#takePhoto{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+label{
+font-size: 1.5rem;    
+    
+}
+
+.item{
+    
+    font-size: 2rem;
+    height: 4rem;
+}
+
+#item{
+    font-size: 1.5rem;
+    height: 4rem;
+}
+
+.img-list{
+    width: 15vw;
+}
+
+.contentModal{
+    margin-top: 25px;
+    
+}
+
+.content-padded {
+    
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.big{
+    
+    width: 100%;
+}
+
+
+#capturedImage{
+    
+    width: 93%;
+    margin: 0 auto;
+    font: 1rem black;
+}
+
+#messages {
+    
+    display: block;
+}
+

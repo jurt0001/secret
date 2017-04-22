@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com http://griffis.edumedia.ca   'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: griffis.edumedia.ca  placeholdit.imgix.net placehold.it ;" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Secret Messenger</title>
+</head>
+
+<body>
+    <!-- //index.html LOGIN PAGE 
+             
+             -->
+    <header class="bar bar-nav">
+        <!--this anchor is just to test the modal for the messages which will appear when you login-->
+        <h1 class="title">Login/Register</h1> </header>
+    <div class="content" id="login-screen">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form id="form">
+            <input id="username" type="text" placeholder="Username">
+            <input id="email" type="text" placeholder="Email"> </form>
+        <p class="content-padded">
+            <br>
+            <a id="register" class="btn btn-primary btn-block"> <span class="icon"></span> Register </a>
+            <a id="login"  class="btn btn-block btn-positive"> <span class="icon"></span> Login </a>
+        </p>
+    </div>
+    
+    
+    
+    
+    <!-- MODAL # 1 - list of messages from server. This comes up when you login in.-->
+    <div id="messages" class="modal">
+      
+        <header class="bar bar-nav">
+            <!--  Redirects to Send message Modal--><a class="btn btn-link btn-nav pull-right" href="#sendModal">
+                
+                Send
+            </a>
+            <h1 class="title">Inbox</h1> </header>
+        <div class="content contentModal">
+            <form class="input-group" id="form">
+                <ul class="table-view" id="list">
+                    <!-- This is a sample, put the list of messages here.-->
+                    <li class="table-view-cell media">
+                        <a class="navigate-right" href="#message-details"> <span class="media-object pull-left icon icon-pages"></span>
+                            <div class="media-body"> Message from: Nick Frost </div>
+                        </a>
+                    </li>
+                    <li class="table-view-cell media">
+                        <a class="navigate-right" href="#message-details"> <span class="media-object pull-left icon icon-pages"></span>
+                            <div class="media-body"> Message from: Simon Pegg </div>
+                        </a>
+                    </li>
+                    <li class="table-view-cell media">
+                        <a class="navigate-right" href="#message-details"> <span class="media-object pull-left icon icon-pages"></span>
+                            <div class="media-body"> Message from: Christian Jurt </div>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    
+    
+    <!-- Message Details modal Window for individual messages-->
+    <div id="message-details" class="modal">
+      
+        <header class="bar bar-nav">
+           
+           <a class="btn btn-link btn-nav pull-right" href="#message-details">
+                
+                Back
+            </a>
+           
+            <!--  Redirects to Send message Modal--><a class="btn btn-link btn-nav pull-right" href="#sendModal">
+                
+                Send
+            </a>
+            <h1 class="title">Message</h1> </header>
+       
+        <a id="deleteMessage" href="#message-details" class="btn btn-block btn-negative"> <span class="icon icon-close"></span> Delete </a>
+        
+        
+    </div>
+    
+    
+    
+    <div id="sendModal" class="modal">
+        <div class="content contentModal">
+            <header class="bar bar-nav">
+            <!--  Redirects back to messages screen-->
+               <a class="btn btn-link btn-nav pull-left" href="#sendModal">
+                Back
+            </a>
+            
+            <h1 class="title">New Message</h1> </header>
+           
+        
+            <div id="capturedImage"> </div>
+            <p class="content-padded">
+              
+              <!-- Put image on top, then drop down with list of all contacts, then put a text field with message you want to hide in your image-->
+              
+               <br>
+               <br>
+               <br>
+                <a id="send-message" href="#sendModal" class="btn btn-block btn-negative"> <span class="icon"></span> Send </a>
+              
+            </p>
+        </div>
+    </div>
+    
+    
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- include the compiled Ratchet JS -->
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bits-1.js"></script>
+</body>
+
+</html>
